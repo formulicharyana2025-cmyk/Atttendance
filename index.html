@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>HaryanaAttendanceSystem</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <iframe 
@@ -9,13 +10,16 @@
     width="100%"
     height="100%"
     allowfullscreen="true"
+    allow="geolocation *; microphone; camera"
     style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none;">
   </iframe>
 
   <script>
+    // Fullscreen request usually requires user interaction due to browser policy
     window.onload = function() {
-      // Fullscreen request might require user interaction first due to browser security
-      document.querySelector('iframe').focus();
+       // Focus on iframe to ensure inputs work immediately
+       var iframe = document.querySelector('iframe');
+       if(iframe) { iframe.focus(); }
     };
   </script>
 </body>
