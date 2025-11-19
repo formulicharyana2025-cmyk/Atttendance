@@ -5,22 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+  
   <iframe 
     src="https://script.google.com/macros/s/AKfycbwVP6UuDa3ujTpi05Q6j2j1w3ZIpJ1SfeYP9l0CUoWW-Oho9pYgjAINjF-iLLsQATE-4w/exec"
     width="100%"
     height="100%"
-    allowfullscreen="true"
-    allow="geolocation *; microphone; camera"
+    allow="geolocation *; microphone *; camera *"
     style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none;">
   </iframe>
 
-  <script>
-    // Fullscreen request usually requires user interaction due to browser policy
-    window.onload = function() {
-       // Focus on iframe to ensure inputs work immediately
-       var iframe = document.querySelector('iframe');
-       if(iframe) { iframe.focus(); }
-    };
-  </script>
 </body>
 </html>
